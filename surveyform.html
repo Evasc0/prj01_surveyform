@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body background="https://wallpapercave.com/wp/wp2757874.gif">
+    
+    <h1 id="title">Survey Form</h1>
+    <div>
+        <p id="description">Please fill out the form below to provide your feedback.</p>
+    </div>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="100" placeholder="Enter a number" required>
+        <label for="dropdown">Dropdown:</label>
+        <select id="dropdown" name="dropdown" required>
+            <option value="">Select an option</option>
+            <option value="option1">PDC</option>
+            <option value="option2">TDC</option>
+
+        </select>
+        <p>Gender:</p>
+        <input type="radio" id="radio1" name="radio" value="radio1" required>
+        <label for="radio1">Male</label>
+        <input type="radio" id="radio2" name="radio" value="radio2">
+        <label for="radio2">Female</label>
+        <p>Year:</p>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+        <label for="checkbox1">2023</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+        <label for="checkbox2">2024</label>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter any additional comments"></textarea>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
